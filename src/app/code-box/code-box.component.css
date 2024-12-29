@@ -1,0 +1,18 @@
+/* code-box.component.css */
+.code-box {
+    background-color: #c7c5c5; /* Gris claro */
+    border: 1px solid #080808;    /* Borde suave */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: 'Courier New', Courier, monospace; /* Fuente tipo monoespaciada */
+    white-space: pre-wrap; /* Asegura que el código no se desborde */
+    word-wrap: break-word; /* Permite que el texto se divida si es necesario */
+    margin-bottom: 20px; /* Separación entre cajas */
+  }
+  
+  .code-box pre {
+    margin: 0; /* Elimina márgenes adicionales */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  }
+  

@@ -1,0 +1,77 @@
+/* Estilo general del header */
+header {
+  width: 100%; /* Cubre todo el ancho */
+  height: 80px; /* Altura fija */
+  background: linear-gradient(to right, #cc1e1e, #be14e1); /* Degradado */
+  color: white; /* Texto blanco */
+  display: flex; /* Flexbox para alinear contenido */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  position: fixed; /* Fijo en la parte superior */
+  top: 0; /* Asegura que quede arriba */
+  left: 0;
+  z-index: 1000; /* Encima de otros elementos */
+  padding: 0 20px; /* Espaciado horizontal */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Ajusta la altura según el tamaño de tu logo */
+  width: auto; /* Mantén la proporción del logo */
+}
+
+/* Estilo del título */
+header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Estilo del menú (ul) */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Hace que el ul ocupe todo el ancho */
+
+}
+
+/* Estilo de cada elemento de la lista (li) */
+header ul li {
+  display: inline-block;
+}
+
+/* Estilo de los enlaces (a) */
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px; /* Espaciado dentro del botón */
+  border-right: 2px solid white; /* Barra blanca entre los elementos */
+  transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+
+/* El último enlace no debe tener barra derecha */
+header ul li a:last-child {
+  border-right: none;
+}
+
+/* Efecto hover para los enlaces */
+header ul li a:hover {
+  color: #ffd700; /* Cambio de color en hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Espaciado para compensar el header fijo */
+body {
+  padding-top: 100px; /* Da espacio para que el contenido no quede cubierto */
+}
+

@@ -1,0 +1,14 @@
+footer {
+    width: 100%;
+    height: 180px; /* Altura similar al header */
+    background: linear-gradient(to left, #cc1e1e, #be14e1);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil arriba */
+    margin-top: auto; /* Empuja el footer al final */
+    padding: 0 20px; /* Espaciado horizontal */
+}

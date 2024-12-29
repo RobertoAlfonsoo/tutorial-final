@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@keyframes backgroundColorChange {
+    0% {
+      background-color: #cc1e1e; /* Rojo inicial */
+    }
+    25% {
+      background-color: #a124d2; /* Púrpura */
+    }
+    50% {
+      background-color: #a31717; /* Azul */
+    }
+    75% {
+      background-color: #a124d2; /* Púrpura */
+    }
+    100% {
+      background-color: #cc1e1e; /* Rojo */
+    }
+  }
+  
+  body {
+    animation: backgroundColorChange 20s infinite; /* Animación de 30 segundos que se repite infinitamente */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    background-position: center;
+    margin: 0; /* Elimina márgenes predeterminados */
+    height: 100vh; /* Asegura que el body cubra toda la pantalla */
+  }
+  

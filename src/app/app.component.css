@@ -1,0 +1,121 @@
+/* ======= ESTILOS GENERALES ======= */
+:root {
+    --primary-color: #6a3aec; /* Fucsia vibrante */
+    --secondary-color: #e3a3b8; /* Rosado claro */
+    --text-color: #333; /* Texto principal */
+    --heading-color: #880e4f; /* Fucsia oscuro */
+    --border-color: #ff0000; /* Borde rosado pastel */
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: #ffffff;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+}
+
+main {
+    flex: 1; /* Ocupa el espacio entre header y footer */
+    margin-left: 260px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 3rem;
+    background: linear-gradient(to right, #cf1e1e, #be14e1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+ 
+  
+  /* ======= SECCIONES ======= */
+  section {
+    margin-bottom: 40px;
+    padding: 1px 30px;
+    border-radius: 8px;
+    background-color: #e2dfdf;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  section.main-section {
+    margin-left: 0; /* Pegado a la izquierda */
+  }
+  
+  
+  section:hover {
+    transform: translateY(-3px);
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin-top: 10px; /* Reduce el margen superior del título */
+    margin-bottom: 15px; /* Reduce el margen inferior del título */
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5px; /* Reduce el padding inferior */
+    font-weight: bold;
+    text-align: center
+  }
+  
+  section h3 {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    margin-top: 15px;
+  }
+  
+  section p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 10px;
+  }
+  
+
+
+
+  img {
+    max-width: 90%; /* La imagen no superará el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    display: block; /* Evita espacios no deseados debajo de la imagen */
+    margin: 10px auto; /* Centra la imagen con un pequeño margen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar la imagen */
+  }
+
+
+  /* ======= BOTONES ======= */
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c2185b;
+  }
+  
+  /* ======= ENLACES ======= */
+  a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration: thick;
+  }
+  
+  a:hover {
+    text-decoration: thick wavy;
+    text-decoration-color: blue;
+    text-decoration-style: thick;
+    text-decoration-thickness: 2px;
+  }
+  
